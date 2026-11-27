@@ -5,6 +5,7 @@ import AccountInfo from '@/components/AccountInfo';
 import GasFeeCard from '@/components/GasFeeCard';
 import RefreshButton from '@/components/RefreshButton';
 import ThemeToggle from '@/components/ThemeToggle';
+import BatchDemo from '@/components/BatchDemo';
 
 export default function Home() {
   const [address, setAddress] = useState(
@@ -45,6 +46,7 @@ export default function Home() {
 
         <AccountInfo address={address} refreshKey={refreshKey} />
         <GasFeeCard />
+        <BatchDemo /> 
       </div>
     </main>
   );
